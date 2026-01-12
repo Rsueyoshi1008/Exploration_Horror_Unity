@@ -67,5 +67,7 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "ExplorationHorror_Unity.slnx"
+    "dotnet.defaultSolution": "ExplorationHorror_Unity.slnx",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
 }
