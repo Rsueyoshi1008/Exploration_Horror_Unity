@@ -10,9 +10,16 @@ public class PlayerMove : MonoBehaviour
     private PlayerInputs _playerInputs;
     private Vector2 _moveInputValue;
 
+    //スクリプト
+    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        if(rb == null)
+        {
+            Debug.LogError("Rigidbody component not found on " + gameObject.name);
+        }
 
         // Actionスクリプトのインスタンス生成
         _playerInputs = new PlayerInputs();
